@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;buyandsell.Mellon&apos; to &apos;MellonSeller&apos;&#x0D;&#x0A;- Original project: &apos;09-javaoopinteraction&apos;&#x0D;&#x0A;- Original element: &apos;buyandsell.Mellon&apos;&#x0D;&#x0A;- Renamed element: &apos;buyandsell.MellonSeller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Mellon&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;buyandsell{Mellon.java[Mellon" matchStrategy="1" name="MellonSeller" qualified="false" references="true" similarDeclarations="false" stamp="1624520134974" textual="false" version="1.0"/>
+</session>

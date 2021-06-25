@@ -1,0 +1,14 @@
+package polymorphism.game;
+
+public class Zombie extends Monster{
+	
+	private int level;
+	public Zombie() {
+		super("좀비",20,5,3);
+	}
+	
+	public void showMonster() {
+		super.showMonster();
+		System.out.println("레벨 :" + level);
+	}
+}

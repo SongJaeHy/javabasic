@@ -1,0 +1,39 @@
+package buyandsell;
+
+public class Buyer {
+	// 구매자
+	// 구매자는 돈, 망고갯수를 멤버변수로 가집니다.
+	// 은닉 구현을 위하서 private으로 처리합니다.
+	
+	
+	// 생성자는 (int money)를 받아 돈을 초기화합니다.
+	// 망고는 자동으로 0을 대입합니다.
+	
+	// BuyMango는 망고를 삽니다.
+	// (int mango)로 망고 갯수를 입력받으면, 망고 * 1000만큼의
+	// 돈을 차감하고 망고 변수에 그만큼 갯수를 늘려줍니다.
+	
+	// ShowBuyer는 구매자의 상태를 보여준다.
+	// money, mango 수치가 각각 몇인지 콘솔에 찍어줍니다.
+	
+	private int money;
+	private int mango;
+	
+	public Buyer(int money) {
+		this.money = money;
+		this.mango = 0;
+	}
+
+	public void buyMango(int mango) {
+		if(mango * 1000 >money) {
+			System.out.println("돈이 모자라 살 수 없습니다.");
+			return;
+		}
+		this.money = money - (mango * 1000);
+		this.mango += mango;
+	}
+	public void showBuyer() {
+		System.out.println("현재 소지금 : " + money);
+		System.out.println("과일 개수 : " + mango);
+	}
+}

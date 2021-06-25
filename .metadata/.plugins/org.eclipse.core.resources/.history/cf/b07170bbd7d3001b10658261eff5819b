@@ -1,0 +1,15 @@
+import accessmodifier.game.Warrior;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		Warrior w1 = new Warrior();
+		w1.getAllData();
+		w1.doubleAttack();
+		w1.getAllData();
+		w1.hunt();
+		w1.getAllData();
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package interaction.game;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Warrior w1 = new Warrior();
+		Orc o1 = new Orc();
+		Trole t1 = new Trole();
+		w1.huntOrc(o1);
+		w1.huntOrc(o1);
+		w1.huntOrc(o1);
+		w1.huntOrc(o1);
+		w1.showStatus();
+		w1.huntTrole(t1);
+		w1.huntTrole(t1);
+		w1.huntTrole(t1);
+		w1.huntTrole(t1);
+		w1.showStatus();
+
+	}
+
+}

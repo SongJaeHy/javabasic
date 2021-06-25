@@ -1,0 +1,24 @@
+package interaction.game;
+
+public class Monster1 {
+	private int hp;
+	private int ap;
+	private int dp;
+	
+	public Monster1() {
+		this.hp = 20;
+		this.ap = 5;
+		this.dp = 10;
+	}
+	public void Attack(Archer a1) {
+		System.out.println("몬스터가 공격을 당했습니다.");
+		hp = hp -5;
+		dp = dp -3;
+		
+	}
+	public void getAlldata() {
+		System.out.println("체력 :" + hp);
+		System.out.println("공격력 :" + ap);
+		System.out.println("방어력 :" + dp);
+	}
+}

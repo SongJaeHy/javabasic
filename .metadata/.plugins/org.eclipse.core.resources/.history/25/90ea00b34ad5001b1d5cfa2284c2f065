@@ -1,0 +1,44 @@
+package interaction.game;
+
+public class Warrior {
+	public int hp;
+	public int ap;
+	public int dp;
+	public int mp;
+	public int level;
+	public int exp;
+	
+	public Warrior() {
+		 hp = 30;
+		 ap = 20;
+		 dp = 20;
+		 mp = 20;
+		 level = 1;
+		 exp = 0;
+	}
+
+	public void hunt(Trole trole, int a) {
+		System.out.println("전사가 몬스터를 공격합니다.");
+		hp = hp - 2;
+		ap = ap + 5;
+	}
+	
+	public void getAlldata() {
+		System.out.println("체력 : " + hp);
+		System.out.println("공격력 : " + ap);
+		System.out.println("방어력 : " + dp);
+		System.out.println("마나 : " + mp);
+		System.out.println("레벨: " + level);
+		System.out.println("경험치 : " + exp);
+		System.out.println("-------------");
+	}
+
+	public void huntTrole(int i) {
+		System.out.println("사냥");
+		hp = hp -2;
+		ap = ap + 2;
+		
+	}
+	
+	
+}

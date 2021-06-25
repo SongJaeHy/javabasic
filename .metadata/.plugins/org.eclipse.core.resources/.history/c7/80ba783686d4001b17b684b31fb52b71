@@ -1,0 +1,12 @@
+package accessmodifier.game;
+
+public class ProtectedMain2 {
+	public static void main(String[] args) {
+		ProtectedArcher w1 = new ProtectedArcher();
+		w1.getAlldata();
+		w1.MultiShot();
+		w1.getAlldata();
+		w1.hunt();
+		w1.getAlldata();
+	}
+}

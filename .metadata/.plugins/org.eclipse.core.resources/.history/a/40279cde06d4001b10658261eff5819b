@@ -1,0 +1,45 @@
+package accessmodifier.game;
+
+public class Warrior extends Commoner{
+
+	private int hp;
+	private int mana;
+	private int level;
+	private int exp;
+	
+	public int getHp() {
+		return this.hp;
+	}
+	public int getMana() {
+		return this.mana;
+	}
+	public int getLevel(){
+		return this.level;
+	}
+	public int getExp() {
+		return this.exp;
+	}
+	public void setMp(int mana) {
+		this.mana = mana;
+	}
+	public void doubleAttack() {
+		System.out.println("전사가 더블어택을 씁니다.");
+		hp = hp;
+		exp = exp + 10;
+	}
+	public void hunt() {
+		System.out.println("전사가 사냥을 시작합니다.");
+		setMp(getMana()-5);
+		mana = mana - 2;
+		exp = exp + 15;
+	}
+	public void getAllData() {
+		// TODO Auto-generated method stub
+		System.out.println("체력" + hp);
+		System.out.println("마나"+ getMana());
+		System.out.println("레벨:"+ level);
+		System.out.println("경험:"+ exp);
+		System.out.println("------------");
+
+	}
+}
