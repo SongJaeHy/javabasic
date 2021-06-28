@@ -2,28 +2,15 @@ package polymorphism.game;
 
 public class Zombie extends Monster{
 
-private int hp;
-private int dp;
-	
-	private int level;
 	public Zombie() {
-		super("좀비",20,5,0);
+		super("좀비",20,5,0,20);
 	}
-	
-	public void showMonster() {
-		super.showMonster();
-		System.out.println("레벨 :" + level);
-	}
-	
-	public void doBattle(int ap) {
-		this.hp = (this.hp + this.dp) - ap;
-		if(this.hp <= 0) {
-			System.out.println("이 좀비는 이미 죽었습니다.");
+	public void doBattle(int uAtk) {
+		setHp(getHp() + getDp() - uAtk);
+		if(getHp() <= 0) {
+			System.out.println("좀비 몬스터는 죽었습니다.");
 		}
-	}
 	
-	public int getAtk() {
-		return this.getAp();	
 	}
-	
 }
+
