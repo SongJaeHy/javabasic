@@ -3,7 +3,7 @@ package polymorphism.game;
 public class Zombie extends Monster{
 
 	public Zombie() {
-		super("좀비",20,5,0,20);
+		super("좀비",20,5,0);
 	}
 	public void doBattle(int uAtk) {
 		setHp(getHp() + getDp() - uAtk);

@@ -11,7 +11,7 @@ public class Asean {
 	// public시 일반 메서드에서 score 조회 가능
 	// private시 static 메서드에서만 조회 가능
 	private static int score = 20;
-	
+
 	// 생성자는 객체 생성시 중간고사, 기말고사, 출석점수를 받습니다.
 	public Asean(int midterm, int finals, int attend) {
 		this.midterm = midterm;

@@ -5,15 +5,13 @@ public class Monster {
 	private int hp;
 	private int ap;
 	private int dp;
-	private int exp;
-	private int mp;
 	
-	public Monster(String name, int ap,int hp, int dp, int exp) {
+	public Monster(String name, int ap,int hp, int dp) {
 		this.name = name;
 		this.hp = hp;
 		this.ap = ap;
 		this.dp = dp;
-		this.exp = exp;
+		
 	}
 	
 	public void doBattle(int uAtk) {
@@ -40,23 +38,4 @@ public class Monster {
 	public int getDp() {
 		return dp;
 	}
-
-	public void setMp(int mp) {
-		this.mp = mp;
-	}
-
-	
-	public void setExp(int exp) {
-		this.exp = exp;
-	}
-	
-	public int getExp() {
-		return exp;
-	}
-	
-	public int getMp() {
-		return mp;
-	}
-	
-
 }
