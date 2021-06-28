@@ -7,7 +7,7 @@ public class StaticTest {
 	// static변수는 객체를(new키워드로 자료를)생성하기 전부터 존재합니다.
 	
 	public static int num2 = 0;
-	
+
 	public StaticTest() {
 		this.num1 = 5;
 		num2 += 1;
