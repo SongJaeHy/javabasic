@@ -1,6 +1,6 @@
 package polymorphism.game;
 
-public class Monster {
+public abstract class Monster {
 	private String name;
 	private int hp;
 	private int ap;
@@ -11,15 +11,14 @@ public class Monster {
 		this.hp = hp;
 		this.ap = ap;
 		this.dp = dp;
-		
 	}
 	
-	public void doBattle(int uAtk) {
+	public abstract void doBattle(int uAtk); /*{
 		this.hp = (this.hp + this.dp) - uAtk;
 		if(this.hp <= 0) {
 			System.out.println(name + "몬스터는  죽었습니다.");
 		}
-	}
+	}*/
 	public String getName() {
 		return name;
 	}

@@ -2,7 +2,7 @@ package polymorphism.game;
 
 public class Kraken extends Monster{
 	public Kraken() {
-		super("크라켄",30,10,5);
+		super("크라켄",30,20,5);
 	}
 	public void doBattle(int uAtk) {
 		setHp(getHp() + getDp() - uAtk);

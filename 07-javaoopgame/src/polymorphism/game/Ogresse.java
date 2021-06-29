@@ -2,7 +2,7 @@ package polymorphism.game;
 
 public class Ogresse extends Monster{
 	public Ogresse() {
-		super("오우거",40,15,10);
+		super("오우거",40,20,10);
 	}
 	public void doBattle(int uAtk) {
 		setHp(getHp() + getDp() - uAtk);

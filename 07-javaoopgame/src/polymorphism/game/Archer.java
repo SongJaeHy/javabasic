@@ -24,7 +24,7 @@ public class Archer {
 			return;
 		}
 		if(monster.getHp() <= 0) {
-			System.out.println("이미 죽은 몬스터를 공격할 수 없습니다.");
+			System.out.println("이미 죽은" + monster.getName() + "몬스터를 공격할 수 없습니다.");
 			return;
 		}
 		monster.doBattle(this.ap);
@@ -37,8 +37,8 @@ public class Archer {
 		}
 		// 만약 전투 도중 몬스터가 죽었다면 경험치를 획득
 		if(monster.getHp() <= 0) {
-			System.out.println("경험치를 30 획득했습니다.");
-			this.exp += 30;
+			System.out.println("경험치를 50 획득했습니다.");
+			this.exp += 50;
 			System.out.println(monster.getName()+"교전 완료!");
 			return;
 		}
@@ -49,7 +49,7 @@ public class Archer {
 	
 	public void hunt(Monster monster) {
 		if(monster.getHp() <= 0) {
-			System.out.println("이미 죽은 몬스터를 공격할 수 없습니다.");
+			System.out.println("이미 죽은" + monster.getName() + "몬스터를 공격할 수 없습니다.");
 			return;
 		}
 		monster.doBattle(this.ap);

@@ -10,8 +10,9 @@ public class Main {
 		Monster t1 = new Troll();
 		Monster o1 = new Ogresse();
 		Monster m1 = new Wyvern();
+		Monster k1 = new Kraken();
 		
-		w1.doubleAttack(z1);
+		w1.hunt(z1);
 		w1.showStatus();
 		
 		w2.MutilShot(o1);
