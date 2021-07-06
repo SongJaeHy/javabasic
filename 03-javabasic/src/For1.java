@@ -12,7 +12,14 @@ public class For1 {
 		for(int i =0; i < 2; i++) {
 			System.out.println("for를 이용한 반복문." + i);
 		}
-
+		for(int i =1; i<= 9; i++) {
+			if(i % 2 == 0) {
+				continue;
+			}
+			System.out.println(i);
+			
+		}
 	}
-
 }
+
+

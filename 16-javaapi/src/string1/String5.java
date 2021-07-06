@@ -12,11 +12,12 @@ public class String5 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("문자열을 입력해주세요.");
 		
+		String naw = "변수는 변할 수 있는 값";
 		String name = scan.nextLine();
 		for(int i=0; i<name.length(); i++) {
 			System.out.println(name.charAt(i));
+			System.out.println(naw.replace("값", "수"));
 		}
 		
 	}
-
 }

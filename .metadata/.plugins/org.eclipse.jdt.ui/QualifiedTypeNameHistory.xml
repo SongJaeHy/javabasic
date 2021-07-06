@@ -7,5 +7,8 @@
 <fullyQualifiedTypeName name="accessmodifier.game.Commoner"/>
 <fullyQualifiedTypeName name="overloading.main"/>
 <fullyQualifiedTypeName name="interface1.Motorcycle"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
