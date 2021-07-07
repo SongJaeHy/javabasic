@@ -24,8 +24,11 @@ public class Lotto1 {
 		Collections.sort(lotto);
 		System.out.println("추첨된 번호 : " + lotto);
 		
-			
-		List<Integer> list = new ArrayList<>();
+		
+		while(lotto.contains(getNum)) {
+			getNum = (int)(Math.random() * 45) +1;
+		}
+		System.out.println("2등 당첨 번호 :" + getNum);
 		
 		
 	}
