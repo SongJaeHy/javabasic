@@ -21,9 +21,9 @@ public class Lotto1 {
 				lotto.add(getNum);
 			}
 		}
+	
 		Collections.sort(lotto);
 		System.out.println("추첨된 번호 : " + lotto);
-		
 		
 		while(lotto.contains(getNum)) {
 			getNum = (int)(Math.random() * 45) +1;
