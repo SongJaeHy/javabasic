@@ -15,7 +15,7 @@ public class Lotto3 {
 		// 6개를 뽑고 이어서 비교해서 일치여부 검사.
 		
 		
-		int count = 0;
+		long count = 0;
 		List<Integer> lotto = new ArrayList<>();
 		List<Integer> getNums = new ArrayList<>();
 		
