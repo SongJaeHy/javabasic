@@ -31,13 +31,14 @@ public class OjdbcUpdate {
 			// 를 이용해 ?를 모두 채워줍니다.
 			// 아래 코드는 첫 번째 ?에는 1을, 두 번째 ?에는 "test"를 대신 넣겠다는 의미
 			pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, 1);
-			pstmt.setString(2, "test4");
+			pstmt.setInt(1, strnum);
+			pstmt.setString(2, st);
 			
 			
 			// 3. 입력이 모두 끝난 뭐리문을 실행합니다.
 			pstmt.executeUpdate();
 			
+			System.out.println(sql);
 			
 		} catch(ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패");
