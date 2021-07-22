@@ -8,6 +8,12 @@ public class JdbcConnection {
 		// 아니면 jar파일만 구해서 바로 적용할 수 도 있습니다.
 		// 공식 홈페이지 루트는
 		// 1. mysql 홈페이지 접속
+		// 2. download탭에서 하단의 mysql community(GPL) 선택
+		// 3. OS에 맞는 버전 선택(mysql installer 선택)
+		// 4. 상단의 2메가바이트짜리 업데이트 파일 다운 후 실행 
+		// 5. connector j 설치
+		// 6. program files(x86) -> mysql -> connector j폴더
+		// 내부의 .jar 파일을 확인하면 됩니다.
 		
 		// jar파일을 어떤 경로로든 구하셨다면, 사용할 프로젝트에
 		// jar파일을 추가해줘야 합니다.
