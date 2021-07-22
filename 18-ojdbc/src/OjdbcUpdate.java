@@ -1,16 +1,16 @@
 import java.sql.*;
-//import java.util.Scanner;
+import java.util.Scanner;
 public class OjdbcUpdate {
 
 	public static void main(String[] args) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
-//		Scanner scan = new Scanner(System.in);
-//		
-//		System.out.println("num에 들어갈 번호를 입력해주세요.");
-//		int strnum = scan.nextInt();
-//		System.out.println("새로 입력할 str 컬럼값을 입력해주세요.");
-//		String st = scan.next();
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("num에 들어갈 번호를 입력해주세요.");
+		int strnum = scan.nextInt();
+		System.out.println("새로 입력할 str 컬럼값을 입력해주세요.");
+		String st = scan.next();
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
