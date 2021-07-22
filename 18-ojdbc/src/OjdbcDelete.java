@@ -21,6 +21,8 @@ public class OjdbcDelete {
 			pstmt = con.prepareStatement(sql);
 			
 			pstmt.executeUpdate();
+			
+			System.out.println(sql);
 		
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패");

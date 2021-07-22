@@ -34,7 +34,7 @@ public class OjdbcDelete1 {
 				}
 			}catch(SQLException e) {
 				e.printStackTrace();
-				
+			
 			}
 		
 		}
